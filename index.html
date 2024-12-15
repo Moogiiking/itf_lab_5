@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Include Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .hello-world {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700; /* Bold weight */
+            font-size: 48px; /* Adjust size as needed */
+            color: white; /* Ensure it matches the design */
+        }
+
+      
+        /* Custom styling for specific elements */
+        .message-box {
+            background-color: #151451;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .message-box input {
+            margin: 10px 0;
+        }
+
+        .progress-bar-custom {
+            background-color: #f61067;
+        }
+
+        .vote-section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .vote-buttons .btn {
+            margin: 5px;
+            width: 100px;
+        }
+
+        .highlight-header {
+            color: #1b1b6c;
+        }
+
+        .youtube-video {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron" style="background-color: #13124f; color: white;">
+            <h1 class="hello-world">Hello, world!</h1>
+            <p>Welcome to Bootstrap v3.3.7. Check out this awesome jumbotron!</p>
+            <p><a class="btn btn-danger btn-lg" href="#" role="button">LEARN MORE</a></p>
+        </div>
+    </div>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Bootstrap Grid -->
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-md-8">
+                <h2 class="highlight-header">Heading goes here</h2>
+                <p>
+                    Cupcake ipsum dolor sit amet caramels halvah soufflé sugar plum. Fruitcake lollipop tiramisu pastry halvah
+                    sweet lemon drops. Jelly beans marshmallow jujubes. Pudding macaroon chocolate cake chupa chups.
+                    Tootsie roll wafer jelly beans cotton candy jelly. Liquorice chocolate cake tart jelly. Chocolate pastry
+                    liquorice cupcake chocolate.
+                </p>
+                <div class="youtube-video">
+                    <h4>Watch This Video</h4>
+                    <iframe src="https://www.youtube.com/embed/07BTQBu5oM4?si=l-9qRlvhplELhNMf&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+            </div>
+            
+
+            <!-- Right Section -->
+            <div class="col-md-4">
+                <!-- Message Box -->
+                <div class="message-box">
+                    <h4>Welcome Candidate!</h4>
+                    <p>You are a Starfleet Academy candidate. Greet the Captain in a <i>respectful</i> fashion.</p>
+                    <input type="text" class="form-control" placeholder="Input your greeting...">
+                    <button class="btn btn-danger btn-block">SEND</button>
+                    <a href="#" style="color: white; font-size: 12px; text-decoration: underline;">I don't watch Star Trek and don't get this reference</a>
+                </div>
+
+                
+                <!-- Voting Section -->
+                <div class="vote-section">
+                    <p>Cast your vote! What do you think about space? See vote progress bar below!</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-custom" style="width: 60%;"></div>
+                    </div>
+                    <div class="vote-buttons text-center">
+                        <button class="btn btn-danger">COOL</button>
+                        <button class="btn btn-success">LAME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

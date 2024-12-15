@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #13124F;
+    color: #F61067;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2AD392;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #352BA5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1b1b6c;
+}
